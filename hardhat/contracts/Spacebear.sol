@@ -8,12 +8,12 @@ import "@openzeppelin/contracts/utils/Counters.sol";
 
 // import "@ganache/console.log/console.sol";
 
-contract MyToken is ERC721, Ownable {
+contract Spacebear is ERC721, Ownable {
     using Counters for Counters.Counter;
 
     Counters.Counter private _tokenIdCounter;
 
-    constructor() ERC721("MyToken", "MTK") {}
+    constructor() ERC721("Spacebear", "SBR") {}
 
     function _baseURI() internal pure override returns (string memory) {
         return
